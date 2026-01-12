@@ -5,57 +5,54 @@ import { HelpCircle, ChevronDown } from 'lucide-react';
 const faqs = [
   {
     q: "¿Es muy caro tener una web profesional?",
-    a: "Depende de lo que necesites, pero tengo soluciones para todos los bolsillos. Desde webs sencillas para empezar hasta sistemas complejos de stock. Lo importante es que la web se pague sola con las ventas que te genere."
+    a: "Depende de lo que necesites, pero tengo soluciones para todos los bolsillos. Lo importante es que la web se pague sola con las ventas que te genere."
   },
   {
     q: "¿Podré gestionar yo mismo los productos o textos?",
-    a: "Totalmente. Te entrego un panel de control muy fácil de usar y te enseño personalmente a subir fotos, cambiar precios o publicar ofertas. No dependerás de mí para el día a día."
+    a: "Totalmente. Te entrego un panel de control muy fácil de usar y te enseño personalmente a gestionarlo. No dependerás de mí para el día a día."
   },
   {
     q: "¿Qué pasa si tengo un problema técnico?",
-    a: "Estoy en Agaete. Si algo falla, me llamas o me escribes por WhatsApp y lo solucionamos en el momento. No hablas con una máquina, hablas conmigo directamente."
+    a: "Estoy en Agaete. Si algo falla, me escribes por WhatsApp y lo solucionamos en el momento. Soporte real y directo."
   },
   {
-    q: "¿Soy el dueño de mi página web?",
-    a: "Sí, el 100%. El dominio y la web son de tu propiedad. Si algún día decides irte, te llevas todo contigo. Sin contratos de permanencia raros."
-  },
-  {
-    q: "¿Por qué pagar un plan mensual si yo mismo cambio los productos?",
-    a: "El panel es para tu comodidad en el día a día. El plan de mantenimiento es para tu tranquilidad técnica: incluye el hosting, el dominio, copias de seguridad diarias y, lo más importante, que si la web falla o te intentan hackear, yo estoy ahí para arreglarlo en minutos sin coste extra."
+    q: "¿Por qué un plan mensual si ya tengo el panel?",
+    a: "El panel es para tu contenido. El plan es para tu seguridad: incluye hosting, dominio, copias diarias y protección contra ataques. Es tu seguro de vida digital."
   }
 ];
 
 export const FAQ: React.FC = () => {
   return (
-    <section className="py-24 bg-white border-t border-stone-100">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-24 bg-transparent relative z-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-pueblo-900 mb-4">
-            Dudas frecuentes
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-stone-100 text-stone-500 text-[10px] font-bold uppercase tracking-widest mb-4">
+            <HelpCircle size={12} /> Resolviendo dudas
+          </div>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 mb-4">
+            Preguntas Frecuentes
           </h2>
-          <p className="text-stone-500 italic">
-            "Transparencia total, para que duermas tranquilo."
-          </p>
+          <p className="text-stone-500 italic">"Transparencia total desde el primer minuto."</p>
         </div>
 
-        <div className="space-y-4">
+        <div className="grid gap-4">
           {faqs.map((faq, i) => (
             <motion.details 
               key={i}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group bg-stone-50 rounded-2xl border border-stone-200 overflow-hidden"
+              className="group bg-white/70 backdrop-blur-md border border-stone-200 rounded-[2rem] overflow-hidden transition-all hover:border-mar-200"
             >
-              <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                <div className="flex items-center gap-4">
-                  <HelpCircle className="text-mar-600 shrink-0" size={20} />
-                  <span className="font-bold text-stone-900 leading-tight">{faq.q}</span>
+              <summary className="flex items-center justify-between p-8 cursor-pointer list-none">
+                <span className="font-serif font-bold text-xl text-stone-900 pr-8">{faq.q}</span>
+                <div className="w-8 h-8 rounded-full bg-stone-50 flex items-center justify-center text-stone-400 group-open:rotate-180 transition-transform">
+                  <ChevronDown size={18} />
                 </div>
-                <ChevronDown className="text-stone-400 group-open:rotate-180 transition-transform" size={20} />
               </summary>
-              <div className="px-10 pb-6 text-stone-600 leading-relaxed border-t border-stone-200 pt-4 bg-white/50">
-                {faq.a}
+              <div className="px-8 pb-8 text-stone-600 leading-relaxed border-t border-stone-100 pt-6 bg-white/30">
+                <p className="max-w-2xl">{faq.a}</p>
               </div>
             </motion.details>
           ))}

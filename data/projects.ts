@@ -2,6 +2,28 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: 'agaete-live',
+    title: 'Agaete.live',
+    category: 'Vision & Lab Prototype',
+    description: 'Mi visión digital para el municipio. Un prototipo inteligente que conecta servicios y comercio en tiempo real.',
+    longDescription: 'Agaete.live es un proyecto personal donde exploro cómo la ingeniería de datos puede mejorar la vida en mi pueblo. Es un prototipo funcional que centraliza mareas, servicios y el tejido comercial, demostrando el potencial de una Villa 100% conectada.',
+    challenges: [
+      'Modelado de datos marítimos y climáticos en tiempo real.',
+      'Integración experimental de negocios locales.',
+      'Interfaz optimizada para la identidad de Agaete.'
+    ],
+    metrics: [
+      'Prototipo de monitor de mareas.',
+      'Arquitectura de Hub Comercial.',
+      'Sistema de avisos municipales.'
+    ],
+    techStack: ['Next.js', 'Real-time APIs', 'Personal Lab'],
+    tags: ['Visión Personal', 'Prototipo', 'Agaete'],
+    imageUrl: '/agaete-live.png',
+    projectType: 'demo',
+    link: 'https://agaete-live.vercel.app/'
+  },
+  {
     id: 'coordenadas-store',
     title: 'Coordenadas Store',
     category: 'E-commerce & Data',
@@ -31,7 +53,7 @@ export const projects: Project[] = [
     ],
     techStack: ['Next.js', 'Admin Panel', 'PostgreSQL'],
     tags: ['Cliente Real', 'Pre-Lanzamiento', 'Logística'],
-    imageUrl: '/tamadabasport-web.png',
+    imageUrl: '/tamadaba-web.png',
     projectType: 'wip',
     link: 'https://tamadaba-sport.vercel.app/'
   },
@@ -48,7 +70,7 @@ export const projects: Project[] = [
     ],
     techStack: ['React', 'E-commerce Prototype'],
     tags: ['Propuesta', 'Cultura', 'Venta Online'],
-    imageUrl: '/lamagia-web.png', // Usamos una imagen diferente para variar
+    imageUrl: '/la-rama-web.png',
     projectType: 'concept',
     link: 'https://la-rama-tienda.vercel.app/'
   },
@@ -65,37 +87,59 @@ export const projects: Project[] = [
     ],
     techStack: ['React', 'WhatsApp Integration'],
     tags: ['Propuesta', 'Artesanía', 'WhatsApp'],
-    imageUrl: '/salsamora-web.png', // Usamos otra imagen para variar el grid
+    imageUrl: '/jabones-jacaranda.png',
     projectType: 'concept',
     link: 'https://jabones-agaete.vercel.app/'
   },
   {
     id: 'platano-loco',
     title: 'Plátano Loco',
-    category: 'Marca & Presencia Digital',
-    description: 'Propuesta de optimización de marca y presencia en redes sociales.',
-    longDescription: 'Prototipo enfocado en el branding y la presencia en redes sociales. Una visión personal de cómo este negocio local puede escalar su imagen digital con tecnología moderna.',
+    category: 'E-commerce & Branding',
+    description: 'Tienda online con identidad vibrante y optimización para redes sociales.',
+    longDescription: 'Desarrollo de plataforma e-commerce para Plátano Loco, enfocada en una experiencia de usuario fluida y una fuerte presencia en redes sociales mediante metatags optimizados.',
     challenges: [
-      'Configuración de Meta Tags para RRSS.',
-      'Optimización de activos de marca.',
-      'Diseño vibrante y moderno.'
+      'Implementación de Open Graph para RRSS.',
+      'Diseño de interfaz vibrante y atractiva.',
+      'Optimización de carga en dispositivos móviles.'
     ],
-    techStack: ['Vite', 'SEO Meta Tags'],
-    tags: ['Propuesta', 'Branding', 'Social Media'],
-    imageUrl: '/logosinnombre.png',
-    projectType: 'concept',
-    link: 'https://platano-loco.vercel.app/'
+    techStack: ['React', 'Social SEO', 'Tailwind'],
+    tags: ['E-commerce', 'Branding', 'RRSS'],
+    imageUrl: '/platano-loco-web.png',
+    projectType: 'real',
+    link: 'https://platano-loco.vercel.app'
   },
   {
-    id: 'agaete-live',
-    title: 'Agaete.live',
-    category: 'Ciudad Inteligente',
-    description: 'Monitor inteligente para el pueblo. El pulso de Agaete en tiempo real.',
-    longDescription: 'Mi proyecto más personal: un monitor inteligente para Agaete que interpreta mareas, clima y transporte. Una propuesta técnica de lo que el futuro digital de Agaete podría ser.',
-    techStack: ['React', 'IoT Data', 'API Mastery'],
-    tags: ['Laboratorio', 'Agaete', 'IoT'],
-    imageUrl: '/logosinnombre.png',
-    projectType: 'demo',
-    link: 'https://agaete-live.vercel.app/'
+    id: 'salsamora',
+    title: 'Salsamora',
+    category: 'Digital Presence',
+    description: 'Presencia digital elegante para el sector servicios.',
+    longDescription: 'Creación de la identidad digital para Salsamora, proporcionando una plataforma limpia y profesional para conectar con sus clientes.',
+    challenges: [
+      'Arquitectura de información simplificada.',
+      'Diseño minimalista y premium.',
+      'Configuración de despliegue continuo.'
+    ],
+    techStack: ['React', 'Clean Design', 'Vercel'],
+    tags: ['Web', 'Minimal', 'Servicios'],
+    imageUrl: '/salsamora-web.png',
+    projectType: 'real',
+    link: 'https://salsamora.vercel.app'
+  },
+  {
+    id: 'el-dedo-de-dios',
+    title: 'Restaurante El Dedo de Dios',
+    category: 'Hostelería & Gestión',
+    description: 'Sistema de reserva inteligente y carta digital interactiva para el restaurante más emblemático.',
+    longDescription: 'Digitalización integral del Restaurante El Dedo de Dios. El sistema permite la gestión automatizada de reservas de mesas y ofrece una carta digital inmersiva para los comensales, optimizando la operativa diaria.',
+    challenges: [
+      'Sistema de reservas con confirmación instantánea.',
+      'Carta digital optimizada para dispositivos móviles.',
+      'Panel de gestión para el personal del restaurante.'
+    ],
+    techStack: ['React', 'Reservations API', 'Digital Menu'],
+    tags: ['Hostelería', 'Agaete', 'Gestión'],
+    imageUrl: '/dedo-de-dios.png',
+    projectType: 'real',
+    link: 'https://el-dedo-de-dios.vercel.app'
   }
 ];

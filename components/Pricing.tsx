@@ -50,9 +50,10 @@ export const Pricing: React.FC = () => {
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
               className={`relative p-10 rounded-[3rem] border flex flex-col transition-all duration-500 hover:-translate-y-2 ${plan.featured ? 'bg-stone-900 text-white border-stone-800 shadow-[0_30px_60px_rgba(0,0,0,0.2)] scale-105 z-10' : 'bg-white/70 backdrop-blur-md border-stone-200 text-stone-900 shadow-sm'}`}
             >
               {plan.featured && (

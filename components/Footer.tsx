@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Globe2, Instagram, Linkedin, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -15,16 +16,23 @@ export const Footer: React.FC = () => {
           
           {/* Brand & Mission */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-serif font-bold text-stone-900 mb-6">Yone.dev</h3>
+            <div className="flex items-center gap-4 mb-6">
+              <img src="/isotipo.png" alt="" className="w-8 h-8 object-contain" />
+              <h3 className="text-2xl font-serif font-bold text-stone-900">yonesuarez.es</h3>
+            </div>
             <p className="text-stone-500 max-w-sm leading-relaxed mb-8">
-              Fusionando ingeniería de datos y diseño artesanal para digitalizar el comercio de Canarias desde Agaete.
+              Fusionando ingeniería de datos y desarrollo de ecosistemas digitales para escalar el comercio de Canarias desde Agaete.
             </p>
             <div className="flex gap-4">
-              {[Instagram, Linkedin, Github].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 hover:bg-mar-900 hover:text-white transition-all">
-                  <Icon size={18} />
-                </a>
-              ))}
+              <a href="https://www.instagram.com/yone.srz/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 hover:bg-mar-900 hover:text-white transition-all">
+                <Instagram size={18} />
+              </a>
+              <a href="https://www.linkedin.com/in/yone-suarez/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 hover:bg-mar-900 hover:text-white transition-all">
+                <Linkedin size={18} />
+              </a>
+              <a href="https://github.com/yonillo" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 hover:bg-mar-900 hover:text-white transition-all">
+                <Github size={18} />
+              </a>
             </div>
           </div>
 
@@ -54,15 +62,23 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-10 border-t border-stone-100 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[10px] font-bold text-stone-400 uppercase tracking-widest">
-            © {currentYear} YONE.DEV — INGENIERÍA DE SOFTWARE & DATOS
-          </p>
-          <div className="flex gap-8 text-[10px] font-bold text-stone-400 uppercase tracking-widest">
-            <span>Built with React & Engineering</span>
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <p className="text-[10px] font-bold text-stone-400 uppercase tracking-widest">
+              © {currentYear} YONE SUÁREZ
+            </p>
+            <span className="hidden md:block text-stone-200">|</span>
+            <Link to="/legal" className="text-[10px] font-bold text-stone-400 uppercase tracking-widest hover:text-mar-600 transition-colors">
+              Aviso Legal & Privacidad
+            </Link>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-8 text-[9px] font-mono text-stone-400 uppercase tracking-[0.2em]">
             <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-              <span>System Status: Online</span>
+              <div className="w-1 h-1 rounded-full bg-emerald-500 animate-pulse" />
+              <span>v3.1.0_stable</span>
             </div>
+            <span>Built_with: React_19</span>
+            <span>Last_Update: 11_JAN_2026</span>
           </div>
         </div>
       </div>

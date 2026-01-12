@@ -34,15 +34,15 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className={`transition-all duration-500 ${isScrolled ? 'w-10 h-10' : 'w-14 h-14'}`}>
+            <div className={`transition-all duration-500 ${isScrolled ? 'w-12 h-12' : 'w-16 h-16'}`}>
               <img 
-                src="/logosinnombre.png" 
+                src="/isotipo.png" 
                 alt="Yone.dev Logo" 
-                className="w-full h-full object-contain drop-shadow-sm group-hover:rotate-[10deg] transition-all"
+                className="w-full h-full object-contain drop-shadow-[0_0_10px_rgba(14,165,233,0.3)] group-hover:drop-shadow-[0_0_20px_rgba(14,165,233,0.6)] group-hover:rotate-[10deg] group-hover:scale-110 transition-all duration-300"
               />
             </div>
             <span className={`text-xl font-serif font-bold tracking-tight transition-colors ${isScrolled ? 'text-stone-900' : 'text-stone-900'}`}>
-              Yone<span className="text-mar-600">.dev</span>
+              yonesuarez<span className="text-mar-600">.es</span>
             </span>
           </Link>
 

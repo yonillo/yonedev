@@ -31,6 +31,7 @@ export const Contact: React.FC = () => {
                   key={i}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   className="flex gap-4 p-4 bg-white rounded-2xl border border-stone-200 shadow-sm"
                 >
@@ -79,6 +80,7 @@ export const Contact: React.FC = () => {
                       <div>
                          <p className="text-xs text-mar-300 uppercase font-bold tracking-widest">Ubicación</p>
                          <p className="text-lg font-bold">Agaete, Gran Canaria</p>
+                         <p className="text-[10px] text-mar-400 font-medium">Soporte remoto y presencial en toda la isla</p>
                       </div>
                    </div>
                 </div>
