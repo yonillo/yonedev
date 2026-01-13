@@ -165,11 +165,11 @@ export const Portfolio: React.FC = () => {
           <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_50%_50%,#0ea5e9_0%,transparent_70%)]" />
           <div className="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
-              <h3 className="text-2xl md:text-3xl font-serif font-bold mb-2">¿Tienes un reto complejo?</h3>
-              <p className="text-stone-400">Diseño arquitecturas a medida para problemas reales.</p>
+              <h3 className="text-2xl md:text-3xl font-serif font-bold mb-2">¿Tu web no está vendiendo?</h3>
+              <p className="text-stone-400">Analizo tu arquitectura actual y detecto fugas de conversión.</p>
             </div>
-            <a href="#contact" className="bg-white text-stone-900 px-10 py-5 rounded-2xl font-bold flex items-center gap-3 hover:bg-stone-100 transition-all shadow-xl">
-              Empezar ahora <ArrowRight size={20} />
+            <a href="#contact" className="bg-white text-stone-900 px-10 py-5 rounded-2xl font-bold flex items-center gap-3 hover:bg-stone-100 transition-all shadow-xl whitespace-nowrap">
+              Solicitar auditoría gratuita <ArrowRight size={20} />
             </a>
           </div>
         </motion.div>

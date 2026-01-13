@@ -18,6 +18,9 @@ export const TechPulse: React.FC = () => {
     { name: 'Agaete.live', id: 'agaete-live', x: '40%', y: '42%', status: 'LAB_MODE', color: 'bg-amber-400' },
     { name: 'Coordenadas', id: 'coordenadas-store', x: '55%', y: '50%', status: 'ONLINE', color: 'bg-emerald-400' },
     { name: 'Tamadaba Sport', id: 'tamadaba-sport', x: '45%', y: '40%', status: 'PRE-LAUNCH', color: 'bg-mar-500' },
+    { name: 'Plátano Loco', id: 'platano-loco', x: '52%', y: '35%', status: 'WIP', color: 'bg-purple-400' },
+    { name: 'Salsamora', id: 'salsamora', x: '60%', y: '45%', status: 'CONCEPT', color: 'bg-stone-400' },
+    { name: 'El Dedo de Dios', id: 'el-dedo-de-dios', x: '35%', y: '55%', status: 'CONCEPT', color: 'bg-stone-400' },
     { name: 'La Rama Tienda', id: 'la-rama-tienda', x: '38%', y: '45%', status: 'PROPOSAL', color: 'bg-sky-400' },
   ];
 
@@ -36,7 +39,7 @@ export const TechPulse: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span className="tracking-[0.2em] font-bold">CLIENTES ACTIVOS EN EL NORTE</span>
+            <span className="tracking-[0.2em] font-bold">CLIENTES ACTIVOS EN CANARIAS</span>
           </div>
           <h2 className="text-4xl font-serif font-bold text-white mb-4">
             Tu negocio, bajo control
@@ -121,7 +124,7 @@ export const TechPulse: React.FC = () => {
              <div className="h-8 w-px bg-stone-700" />
              <div className="text-center">
                 <p className="text-[10px] text-stone-400 uppercase tracking-widest mb-1 font-bold">Soporte</p>
-                <p className="text-xl font-mono text-white font-bold tracking-tighter">AGAETE / CANARIAS</p>
+                <p className="text-xl font-mono text-white font-bold tracking-tighter">GRAN CANARIA / NODES</p>
              </div>
           </div>
         </div>

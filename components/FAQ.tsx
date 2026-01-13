@@ -12,8 +12,8 @@ const faqs = [
     a: "Totalmente. Te entrego un panel de control muy fácil de usar y te enseño personalmente a gestionarlo. No dependerás de mí para el día a día."
   },
   {
-    q: "¿Qué pasa si tengo un problema técnico?",
-    a: "Estoy en Agaete. Si algo falla, me escribes por WhatsApp y lo solucionamos en el momento. Soporte real y directo."
+    q: "¿Qué pasa si algo se rompe?",
+    a: "Estoy en Canarias. Si algo falla, me escribes por WhatsApp y lo solucionamos en el momento. Soporte real y directo."
   },
   {
     q: "¿Por qué un plan mensual si ya tengo el panel?",

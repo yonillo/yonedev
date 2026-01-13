@@ -88,8 +88,8 @@ export const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-5xl md:text-[5rem] font-serif font-bold text-stone-900 mb-6 leading-[0.95] tracking-tight">
-              {greeting}, <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-mar-900 via-mar-700 to-mar-500 italic">escalabilidad y datos.</span>
+              Ingeniería, <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-mar-900 via-mar-700 to-mar-500 italic">escalabilidad y producto.</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-stone-500 mb-8 max-w-2xl leading-relaxed font-medium">
@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
             
             <div className="flex flex-wrap gap-4">
               <a href="#contact" className="bg-stone-900 text-white px-8 py-4 rounded-2xl font-bold flex items-center gap-3 hover:shadow-[0_20px_40px_rgba(12,74,110,0.2)] hover:-translate-y-1 transition-all duration-300">
-                Iniciar consulta técnica <ArrowRight size={20} />
+                ¿Tu web no vende? Auditoría gratuita <ArrowRight size={20} />
               </a>
               <div className="flex items-center gap-3 px-5 py-4 bg-white border border-stone-200 rounded-2xl text-xs font-bold text-stone-700 shadow-sm">
                 <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />

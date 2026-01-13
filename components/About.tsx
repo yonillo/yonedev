@@ -78,7 +78,7 @@ export const About: React.FC = () => {
                 Esta plataforma es el resultado de un reto personal por transformar mi entorno: en apenas unas semanas, he logrado digitalizar pilares clave del comercio y la vida en el Norte, demostrando que la ingeniería de alto nivel puede ejecutarse con máxima agilidad y cercanía.
               </p>
               <p>
-                Aunque mi base está en el Norte de Gran Canaria, el código es universal. Desarrollo arquitecturas escalables preparadas para competir en cualquier mercado, con el objetivo de conectar el talento y los negocios de Canarias con el mundo.
+                Aunque mi base principal está en Gran Canaria, he expandido operaciones a Tenerife. Desarrollo arquitecturas escalables preparadas para competir en cualquier mercado, con el objetivo de conectar el talento y los negocios de Canarias con el mundo.
               </p>
             </div>
 
@@ -102,7 +102,7 @@ export const About: React.FC = () => {
             <div className="mt-12 pt-8 border-t border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-8">
                <div className="flex items-center gap-3 text-stone-400">
                   <Globe2 size={20} className="text-mar-600" />
-                  <span className="text-xs font-bold uppercase tracking-widest">Basado en Agaete, GC</span>
+                  <span className="text-xs font-bold uppercase tracking-widest">Gran Canaria & Tenerife</span>
                </div>
                
                {/* FIRMA DE AUTOR (SVG Animado sutil) */}

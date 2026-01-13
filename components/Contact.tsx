@@ -15,14 +15,14 @@ export const Contact: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           <div>
-            <span className="text-mar-700 font-bold tracking-widest uppercase text-sm mb-4 block">Contacto Directo</span>
+            <span className="text-mar-700 font-bold tracking-widest uppercase text-sm mb-4 block">Auditoría Gratuita</span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-pueblo-900 mb-8">
-              ¿Hablamos de <br />
-              <span className="text-mar-800 italic">tu negocio?</span>
+              ¿Tu web no vende?<br />
+              <span className="text-mar-800 italic">Solicita tu diagnóstico.</span>
             </h2>
             
             <p className="text-stone-600 text-lg mb-12">
-              No te voy a vender humo ni tecnicismos. Dime qué necesita tu empresa y te diré cómo la tecnología puede ayudarte a facturar más.
+              Analizo tu arquitectura actual, velocidad y conversión sin compromiso. Descubre por qué tu competencia escala mientras tú te estancas.
             </p>
 
             <div className="space-y-6">
@@ -79,8 +79,8 @@ export const Contact: React.FC = () => {
                       </div>
                       <div>
                          <p className="text-xs text-mar-300 uppercase font-bold tracking-widest">Ubicación</p>
-                         <p className="text-lg font-bold">Agaete, Gran Canaria</p>
-                         <p className="text-[10px] text-mar-400 font-medium">Soporte remoto y presencial en toda la isla</p>
+                         <p className="text-lg font-bold">Canarias</p>
+                         <p className="text-[10px] text-mar-400 font-medium">Soporte remoto regional | Presencial en GC</p>
                       </div>
                    </div>
                 </div>

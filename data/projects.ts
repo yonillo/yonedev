@@ -52,7 +52,7 @@ export const projects: Project[] = [
       'Branding digital integrado.'
     ],
     techStack: ['Next.js', 'Admin Panel', 'PostgreSQL'],
-    tags: ['Cliente Real', 'Pre-Lanzamiento', 'Logística'],
+    tags: ['Próximamente', 'Pre-Lanzamiento', 'Logística'],
     imageUrl: '/tamadaba-web.png',
     projectType: 'wip',
     link: 'https://tamadaba-sport.vercel.app/'
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     techStack: ['React', 'Social SEO', 'Tailwind'],
     tags: ['E-commerce', 'Branding', 'RRSS'],
     imageUrl: '/platano-loco-web.png',
-    projectType: 'real',
+    projectType: 'wip',
     link: 'https://platano-loco.vercel.app'
   },
   {
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     techStack: ['React', 'Clean Design', 'Vercel'],
     tags: ['Web', 'Minimal', 'Servicios'],
     imageUrl: '/salsamora-web.png',
-    projectType: 'real',
+    projectType: 'concept',
     link: 'https://salsamora.vercel.app'
   },
   {
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     techStack: ['React', 'Reservations API', 'Digital Menu'],
     tags: ['Hostelería', 'Agaete', 'Gestión'],
     imageUrl: '/dedo-de-dios.png',
-    projectType: 'real',
+    projectType: 'concept',
     link: 'https://el-dedo-de-dios.vercel.app'
   }
 ];
